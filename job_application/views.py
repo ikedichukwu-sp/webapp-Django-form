@@ -29,3 +29,7 @@ def index(request):
             # Redirect to the same page after form submission to prevent duplicate submission
             return redirect('index')  # Replace 'index' with the appropriate URL name if needed
     return render(request, "index.html")
+
+
+def about(request):
+    return render(request, "about.html")
